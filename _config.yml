@@ -1,7 +1,5 @@
 ---
-# Meta Information
 title: Pagoda Goods
-description: 'Pagoda Goods is a group of friends living in DC, trying to start a cafe and collection of original goods & apparel.'
 timezone: UTC
 collections:
   posts:
@@ -10,26 +8,17 @@ collections:
   uploads:
     title: Uploads
     output: true
-
-# Site URLs
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Social Media Handles
-twitter:
-facebook:
-
-# Build settings
+description: Pagoda Goods is a group of friends living in DC, trying to start a cafe
+  and collection of original goods & apparel.
+baseurl: ''
+url: ''
+twitter: 
+facebook: 
 markdown: kramdown
-
-# Site Assets
-logo: /uploads/pg-logo.svg
-logo-icon: /uploads/pg-icon.svg
-
-# Contact Information
+logo: "/uploads/pg-logo.svg"
+logo-icon: "/uploads/pg-icon.svg"
 email: info@pagodagoods.com
 copyright: Pagoda Goods | 2016- All Rights Reserved
-
 gems:
 - jekyll-feed
 exclude:
