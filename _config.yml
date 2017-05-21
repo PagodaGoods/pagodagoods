@@ -10,10 +10,10 @@ collections:
     output: true
 description: Pagoda Goods is a group of friends living in DC, trying to start a cafe
   and collection of original goods & apparel.
-baseurl: 
-url: 
-twitter: 
-facebook: 
+baseurl:
+url:
+twitter:
+facebook:
 markdown: kramdown
 logo: "/uploads/pg-logo.svg"
 logo-icon: "/uploads/pg-icon.svg"

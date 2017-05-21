@@ -1,6 +1,9 @@
 </main>
 </body>
 
+<!-- scripts -->
+<script type="text/javascript" src="/assets/js/app.js"></script>
+
 <script>
   // script for handling the products sliding in/out
   AOS.init({
@@ -27,6 +30,40 @@
   });
 </script>
 
+<script>
+(function() {
+    var header = document.querySelector(".headroom");
+
+    if(window.location.hash) {
+      header.classList.add("headroom--unpinned");
+    }
+
+    var headroom = new Headroom(header, {
+        tolerance: {
+          down : 0,
+          up : 840
+        },
+        offset : 840
+    });
+    headroom.init();
+
+}());
+</script>
+
+<!--
+<script>
+  $(document).ready(function() {
+    var $header = $("header"),
+      $clone = $header.before($header.clone().addClass("clone"));
+
+    $(window).on("scroll", function() {
+      var fromTop = $(window).scrollTop();
+      $("body").toggleClass("down", (fromTop > 800));
+    });
+  });
+</script>-->
+
+<!--
 <script type="text/javascript">
   //script for handling the menu sliding out
   (function($) {
@@ -40,7 +77,7 @@
       });
     });
   })(jQuery);
-</script>
+</script>-->
 
 <script type="text/javascript">
   var videos = document.getElementsByTagName("video"),
@@ -74,8 +111,5 @@ window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
 
 </script>
-
-<!-- scripts -->
-<script type="text/javascript" src="/assets/js/app.js"></script>
 
 </html>

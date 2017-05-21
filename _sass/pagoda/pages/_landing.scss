@@ -1,7 +1,25 @@
 /* Landing Page */
 
 .pagoda-header {
+}
+
+.headroom {
   border-bottom: solid 4px rgba(197, 174, 109, 1);
+}
+
+.headroom {
+  transition: transform .25s ease-in-out;
+  will-change: transform;
+}
+
+.headroom--unpinned {
+  transform: translateY(0);
+    z-index: 9999;
+}
+
+.headroom--pinned {
+  transform: translateY(-100%);
+
 }
 
 .header-links {
