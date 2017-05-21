@@ -1,15 +1,19 @@
-/*=============================================>>>>>
-= pagoda landing page =
-===============================================>>>>>*/
+/* Landing Page */
+
+.pagoda-header {
+  border-bottom: solid 4px rgba(197, 174, 109, 1);
+}
 
 .header-links {
   left: -3.5rem;
 }
 
 .floaty {
-  animation: floaty 2500ms ease-in-out infinite
+  animation: floaty 2500ms ease-in-out infinite;
 }
 
 @keyframes floaty {
-  50% { transform: translate(0, 40px) }
+  50% {
+    transform: translate(0, 40px);
+  }
 }
