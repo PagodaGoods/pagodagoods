@@ -42,3 +42,4 @@ newsletter-header: Newsletter
 newsletter-subheader: Signup for our newsletter to receive updates about our shop
 
 ---
+
