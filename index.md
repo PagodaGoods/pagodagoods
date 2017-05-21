@@ -2,7 +2,6 @@
 title: Pagoda Goods
 permalink: "/"
 description: 
-layout: pages/2017-landing
 hero-arrow: "/uploads/pg-arrow-down-black.png"
 introduction: We’re a group of friends living in DC, trying to start a cafe and collection
   of original goods & apparel
@@ -28,5 +27,6 @@ follow-subheader: We're working hard to get this happening soon. Follow us to se
   what's good
 newsletter-header: Newsletter
 newsletter-subheader: Signup for our newsletter to receive updates about our shop
+layout: pages/2017-landing
 ---
 
