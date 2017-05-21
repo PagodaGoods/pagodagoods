@@ -50,34 +50,16 @@
 }());
 </script>
 
-<!--
+
 <script>
-  $(document).ready(function() {
-    var $header = $("header"),
-      $clone = $header.before($header.clone().addClass("clone"));
+  var player = new MediaElement('player', {
+  	pluginPath: "https://cdnjs.com/libraries/mediaelement/",
+  	success: function(mediaElement, originalNode) {
+          // do things
 
-    $(window).on("scroll", function() {
-      var fromTop = $(window).scrollTop();
-      $("body").toggleClass("down", (fromTop > 800));
-    });
+      }
   });
-</script>-->
-
-<!--
-<script type="text/javascript">
-  //script for handling the menu sliding out
-  (function($) {
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 900) {
-          $('#menu').slideDown(250);
-        } else {
-          $('#menu').slideUp(250);
-        }
-      });
-    });
-  })(jQuery);
-</script>-->
+</script>
 
 <script type="text/javascript">
   var videos = document.getElementsByTagName("video"),
