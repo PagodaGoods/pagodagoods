@@ -1,7 +1,6 @@
 ---
 title: Pagoda Goods
 permalink: "/"
-description: 
 hero-arrow: "/uploads/pg-arrow-down-black.png"
 introduction: We’re a group of friends living in DC, trying to start a cafe and collection
   of original goods & apparel
