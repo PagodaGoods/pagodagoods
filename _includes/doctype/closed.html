@@ -1,75 +1,58 @@
-</main>
-</body>
+    </main>
+  </body>
 
-<!-- scripts -->
-<script type="text/javascript" src="/assets/js/app.js"></script>
+  <!-- scripts -->
+  <script type="text/javascript" src="/assets/js/app.js"></script>
 
-<script>
-  // script for handling the products sliding in/out
-  AOS.init({
-    disable: function() {
-      var maxWidth = 1024;
-      return window.innerWidth < maxWidth;
-    }
-  });
-</script>
-
-<script type="text/javascript">
-  //script for handling smooth scrolling to anchors
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
+  <script>
+    // script for handling the products sliding in/out
+    AOS.init({
+      disable: function() {
+        var maxWidth = 1024;
+        return window.innerWidth < maxWidth;
       }
-    }
-  });
-</script>
-
-<script>
-(function() {
-    var header = document.querySelector(".headroom");
-
-    if(window.location.hash) {
-      header.classList.add("headroom--unpinned");
-    }
-
-    var headroom = new Headroom(header, {
-        tolerance: {
-          down : 0,
-          up : 840
-        },
-        offset : 840
     });
-    headroom.init();
+  </script>
 
-}());
-</script>
-
-
-<script>
-  var player = new MediaElement('player', {
-  	pluginPath: "https://cdnjs.com/libraries/mediaelement/",
-  	success: function(mediaElement, originalNode) {
-          // do things
-
+  <script type="text/javascript">
+    //script for handling smooth scrolling to anchors
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
       }
-  });
-</script>
+    });
+  </script>
 
-<script type="text/javascript">
-  var videos = document.getElementsByTagName("video"),
-fraction = 0.1;
-function checkScroll() {
+  <script>
+  (function() {
+      var header = document.querySelector(".headroom");
+      if(window.location.hash) {
+        header.classList.add("headroom--unpinned");
+      }
+      var headroom = new Headroom(header, {
+          tolerance: {
+            down : 0,
+            up : 840
+          },
+          offset : 840
+      });
+      headroom.init();
+  }());
+  </script>
 
-    for(var i = 0; i < videos.length; i++) {
-
+  <script type="text/javascript">
+    var videos = document.getElementsByTagName("video"),
+    fraction = 0.1;
+    function checkScroll() {
+      for(var i = 0; i < videos.length; i++) {
         var video = videos[i];
-
         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
             b = y + h, //bottom
             visibleX, visibleY, visible;
@@ -84,14 +67,9 @@ function checkScroll() {
             } else {
                 video.pause();
             }
-
+      }
     }
-
-}
-
-window.addEventListener('scroll', checkScroll, false);
-window.addEventListener('resize', checkScroll, false);
-
-</script>
-
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+  </script>
 </html>
