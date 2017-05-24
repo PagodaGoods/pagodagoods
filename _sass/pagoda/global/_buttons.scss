@@ -1,6 +1,4 @@
-/*=============================================>>>>>
-= pagoda buttons =
-===============================================>>>>>*/
+/* Pagoda Buttons */
 
 .pg-btn-outline {
   padding: 1em 1.5em;
@@ -12,7 +10,7 @@
   border: solid 5px #c6af69;
   color: #c6af69;
   background-color: none;
-  transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in;
 }
 
 .pg-btn-outline--gold:hover {
@@ -22,14 +20,14 @@
 }
 
 .pg-btn-outline--white {
-  border: solid 5px #ffffff;
-  color: #ffffff;
+  border: solid 5px #fff;
+  color: #fff;
   background-color: none;
-  transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in;
 }
 
 .pg-btn-outline--white:hover {
-  border: solid 5px #ffffff;
-  background-color: #ffffff;
+  border: solid 5px #fff;
+  background-color: #fff;
   color: #c6af69;
 }
