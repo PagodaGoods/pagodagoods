@@ -12,8 +12,7 @@ description: Pagoda Goods is a group of friends living in DC, trying to start a 
   and collection of original goods & apparel.
 baseurl:
 url:
-twitter:
-facebook:
+instagram-url: https://www.instagram.com/pagodagoods/
 markdown: kramdown
 logo: "/uploads/pg-logo.svg"
 logo-icon: "/uploads/pg-icon.svg"
