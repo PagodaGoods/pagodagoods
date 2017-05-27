@@ -4,9 +4,11 @@
 /* tachyons */
 @import "tachyons/tachyons";
 
+@import "pagoda/global/variables";
 @import "pagoda/pages/landing";
-
-@import "pagoda/global/buttons";
-@import "pagoda/global/colors";
-@import "pagoda/global/mailchimp";
 @import "pagoda/global/typography";
+@import "pagoda/global/colors";
+@import "pagoda/global/buttons";
+
+@import "pagoda/global/aos";
+@import "pagoda/global/mailchimp";
