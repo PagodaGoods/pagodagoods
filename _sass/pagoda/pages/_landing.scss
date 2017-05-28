@@ -1,15 +1,60 @@
-/*=============================================>>>>>
-= pagoda landing page =
-===============================================>>>>>*/
+/* Landing Page */
+
+.headroom {
+  border-bottom: solid 4px $pg-gold;
+}
+
+.headroom {
+  transition: transform 0.25s ease-in-out;
+  will-change: transform;
+}
+
+.headroom--unpinned {
+  transform: translateY(0);
+  z-index: 9999;
+}
+
+.headroom--pinned {
+  transform: translateY(-100%);
+}
 
 .header-links {
   left: -3.5rem;
 }
 
 .floaty {
-  animation: floaty 2500ms ease-in-out infinite
+  animation: floaty 2500ms ease-in-out infinite;
 }
 
 @keyframes floaty {
-  50% { transform: translate(0, 40px) }
+  50% {
+    transform: translate(0, 40px);
+  }
+}
+
+#instafetch article {
+  float: left;
+  width: 100%;
+}
+
+#instafetch img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#instafetch figure {
+  margin: 0;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #instafetch article {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #instafetch article {
+    width: 20%;
+  }
 }

@@ -1,21 +1,51 @@
-/*=============================================>>>>>
-= pagoda colors =
-===============================================>>>>>*/
+/* Pagoda Colors */
 
-/* colors */
-.pg-gold { color: rgba(197,174,109,1.00); }
-.pg-burgundy { color: rgba(45,27,25,1.00); }
-.pg-aqua-haze { color: rgba(236,244,246,1.00); }
-.pg-aluminum { color: rgba(155,155,155,1.00); }
+/* base colors */
+.pg-gold {
+  color: $pg-gold;
+}
 
-.black { color: rgba(0,0,0,1.00); }
-.white { color: rgba(255,255,255,1.00); }
+.pg-burgundy {
+  color: $pg-burgundy;
+}
+
+.pg-aqua-haze {
+  color: $pg-aqua-haze;
+}
+
+.pg-aluminum {
+  color: $pg-aluminum;
+}
+
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
 
 /* background colors */
-.bg-pg-gold { background-color: rgba(197,174,109,1.00); }
-.bg-pg-burgundy { background-color: rgba(45,27,25,1.00); }
-.bg-pg-aqua-haze { background-color: rgba(236,244,246,1.00); }
-.bg-pg-aluminum { background-color: rgba(155,155,155,1.00); }
+.bg-pg-gold {
+  background-color: $pg-gold;
+}
 
-.bg-black { background-color: rgba(0,0,0,1.00); }
-.bg-white { background-color: rgba(255,255,255,1.00); }
+.bg-pg-burgundy {
+  background-color: $pg-burgundy;
+}
+
+.bg-pg-aqua-haze {
+  background-color: $pg-aqua-haze;
+}
+
+.bg-pg-aluminum {
+  background-color: $pg-aluminum;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-white {
+  background-color: $white;
+}

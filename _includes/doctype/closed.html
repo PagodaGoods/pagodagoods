@@ -1,56 +1,58 @@
-</main>
-</body>
+    </main>
+  </body>
 
-<script>
-  // script for handling the products sliding in/out
-  AOS.init({
-    disable: function() {
-      var maxWidth = 1024;
-      return window.innerWidth < maxWidth;
-    }
-  });
-</script>
+  <!-- scripts -->
+  <script type="text/javascript" src="/assets/js/app.js"></script>
 
-<script type="text/javascript">
-  //script for handling smooth scrolling to anchors
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
+  <script>
+    // script for handling the products sliding in/out
+    AOS.init({
+      disable: function() {
+        var maxWidth = 1024;
+        return window.innerWidth < maxWidth;
       }
-    }
-  });
-</script>
-
-<script type="text/javascript">
-  //script for handling the menu sliding out
-  (function($) {
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 900) {
-          $('#menu').slideDown(250);
-        } else {
-          $('#menu').slideUp(250);
-        }
-      });
     });
-  })(jQuery);
-</script>
+  </script>
 
-<script type="text/javascript">
-  var videos = document.getElementsByTagName("video"),
-fraction = 0.1;
-function checkScroll() {
+  <script type="text/javascript">
+    //script for handling smooth scrolling to anchors
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  </script>
 
-    for(var i = 0; i < videos.length; i++) {
+  <script>
+  (function() {
+      var header = document.querySelector(".headroom");
+      if(window.location.hash) {
+        header.classList.add("headroom--unpinned");
+      }
+      var headroom = new Headroom(header, {
+          tolerance: {
+            down : 0,
+            up : 840
+          },
+          offset : 840
+      });
+      headroom.init();
+  }());
+  </script>
 
+  <script type="text/javascript">
+    var videos = document.getElementsByTagName("video"),
+    fraction = 0.1;
+    function checkScroll() {
+      for(var i = 0; i < videos.length; i++) {
         var video = videos[i];
-
         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
             b = y + h, //bottom
             visibleX, visibleY, visible;
@@ -65,17 +67,18 @@ function checkScroll() {
             } else {
                 video.pause();
             }
-
+      }
     }
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+  </script>
 
-}
-
-window.addEventListener('scroll', checkScroll, false);
-window.addEventListener('resize', checkScroll, false);
-
-</script>
-
-<!-- scripts -->
-<script type="text/javascript" src="/assets/js/app.js"></script>
-
+  <script type="text/javascript">
+    instafetch.init({
+      accessToken: '2243014632.1677ed0.39939ed36a144b4789e61e39fef5d374',
+      target: 'instafetch',
+      numOfPics: 10,
+      caption: false
+    });
+  </script>
 </html>
