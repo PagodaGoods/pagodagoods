@@ -1,10 +1,14 @@
 /* Pagoda Typography */
 
-$matrix: "matrix-ii", georgia, serif;
-$proxima: "proxima-nova", helvetica, sans-serif;
-$monsterrat: 'Montserrat', sans-serif;
-
 /* font families */
-.matrix { font-family: $matrix; }
-.proxima { font-family: $proxima; }
-.monsterrat { font-family: $monsterrat; }
+.matrix {
+  font-family: $matrix;
+}
+
+.proxima {
+  font-family: $proxima;
+}
+
+.monsterrat {
+  font-family: $monsterrat;
+}

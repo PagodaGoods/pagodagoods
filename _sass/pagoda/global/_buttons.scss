@@ -7,27 +7,27 @@
 }
 
 .pg-btn-outline--gold {
-  border: solid 5px #c6af69;
-  color: #c6af69;
+  border: solid 5px $pg-gold;
+  color: $pg-gold;
   background-color: none;
   transition: background-color 100ms ease-in;
 }
 
 .pg-btn-outline--gold:hover {
-  border: solid 5px #c6af69;
-  color: #2d1b19;
-  background-color: #c6af69;
+  border: solid 5px $pg-gold;
+  color: $pg-burgundy;
+  background-color: $pg-gold;
 }
 
 .pg-btn-outline--white {
-  border: solid 5px #fff;
-  color: #fff;
+  border: solid 5px $white;
+  color: $white;
   background-color: none;
   transition: background-color 100ms ease-in;
 }
 
 .pg-btn-outline--white:hover {
-  border: solid 5px #fff;
-  background-color: #fff;
-  color: #c6af69;
+  border: solid 5px $white;
+  background-color: $white;
+  color: $pg-gold;
 }

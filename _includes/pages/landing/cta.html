@@ -1,9 +1,13 @@
   <section class="vh-75 dt w-100 bg-pg-gold pa4">
     <div class="dtc v-mid tc pg-gold">
-      <p class="ma0 mb4 f3 f3-m f2-l white matrix tc lh-copy measure-narrow measure-ns center">{{ page.cta }}</p>
+      <p class="ma0 mb4 f3 f3-m f2-l white matrix tc lh-copy measure-narrow measure-ns center">
+        {{ page.cta }}
+      </p>
 
       {% if page.is-cta-button-visible == true %}
-      <a href="{{page.cta-link}}" class="matrix f4 f3-ns fw9 dib center pg-btn-outline pg-btn-outline--white link">{{ page.cta-button }}</a>
+      <a href="{{page.cta-link}}" class="matrix f4 f3-ns fw9 dib center pg-btn-outline pg-btn-outline--white link">
+        {{ page.cta-button }}
+      </a>
       {% endif %}
     </div>
   </section>
