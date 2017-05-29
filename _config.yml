@@ -20,6 +20,7 @@ email: info@pagodagoods.com
 copyright: Pagoda Goods | 2016- All Rights Reserved
 gems:
 - jekyll-feed
+- jekyll-seo-tag
 exclude:
 - Gemfile
 - Gemfile.lock
