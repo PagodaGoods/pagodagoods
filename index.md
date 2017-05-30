@@ -18,7 +18,7 @@ product-poncho-description: a rain jacket inspired by traditional British cyclin
   capes.
 product-saddlebag-image: "/uploads/pg-saddlebag.svg"
 product-saddlebag-description: a saddle bag for easy bike trips to the corner store.
-cta: We currently do farmers markets and pop ups, but we're looking for a permanent
+cta: We currently do farmer's markets and pop-ups, but we're looking for a permanent
   home where we can apply our aesthetic, build an inviting space, and focus on quality
   coffee and original goods
 is-cta-button-visible: 
