@@ -8,15 +8,15 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    image: "/assets/images/default-card.png"
 description: Pagoda Goods is a group of friends living in DC, trying to start a cafe
   and collection of original goods & apparel.
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/images/default-card.png
-baseurl:
-url:
+baseurl: 
+url: 
 instagram-url: https://www.instagram.com/pagodagoods/
 markdown: kramdown
 logo: "/uploads/pg-logo.svg"
