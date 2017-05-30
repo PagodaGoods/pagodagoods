@@ -15,8 +15,8 @@ defaults:
     image: "/uploads/default-card.png"
 description: Pagoda Goods is a group of friends living in DC, trying to start a cafe
   and collection of original goods & apparel.
-baseurl:
-url:
+baseurl: 
+url: 
 instagram-url: https://www.instagram.com/pagodagoods/
 markdown: kramdown
 logo: "/uploads/pg-logo.svg"
